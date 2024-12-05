@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1 rem = 16 pixels. */
+
+.card-img-top{
+    height: 300px;
+}
+.icon-bag{
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgb(250, 238, 220);
+    box-shadow: -2px 0 4px hsl(0 4%, 15%, 10%);
+    transition: 1s;
+    z-index: 9;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.add-cart{
+    cursor: pointer;
+    font-size: 2rem;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.cart-img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+
+
+.cart-quantity{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: orange;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.line{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid ;
+}
+
+/* .totle-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.totle-price{
+    margin-left: 0.5rem;
+
+} */
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 3px;
+}
+
+.btn-buy:hover{
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+}
+
+.close-cart{
+    position: absolute;
+    top: 0;
+    right: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 120;
+    margin: 15px 10px;
+}
+
+.icon-bag{
+    color: white;
+
+}
+
+.card button {
+    background-color: transparent;
+    border: none;
+}
+
